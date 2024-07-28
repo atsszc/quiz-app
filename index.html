@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Quiz App</title>
+    <link rel="stylesheet" href=".//style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="time1">
+        <p class="time">Time: 30</p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="quiz">JavaScript Quiz App</div>
+        <section id="intro">
+          <h1>Welcome!</h1>
+          <p class="p">What is the answer to the following questions?</p>
+
+          <div class="start-button">
+            <button id="start" type="button">Start Quiz</button>
+          </div>
+        </section>
+        <section id="questions" style="display: none">
+          <div>
+            <h2 id="question">I'm a question</h2>
+            <ul class="nobullets">
+              <li>
+                <button id="answer1" value="0" type="button" class="ansBtn">
+                  Answer1
+                </button>
+              </li>
+              <li>
+                <button id="answer2" value="1" type="button" class="ansBtn">
+                  Answer2
+                </button>
+              </li>
+              <li>
+                <button id="answer3" value="2" type="button" class="ansBtn">
+                  Answer3
+                </button>
+              </li>
+              <li>
+                <button id="answer4" value="3" type="button" class="ansBtn">
+                  Answer4
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="final" style="display: none">
+          <div>
+            <h2>Quiz bitti!</h2>
+            <table id="resultsTable">
+              <thead>
+                <tr>
+                  <th>Soru</th>
+                  <th>Verilen Cevap</th>
+                  <th>Doğru Cevap</th>
+                </tr>
+              </thead>
+              <tbody id="resultsBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
